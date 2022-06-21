@@ -19,7 +19,7 @@ pipeline{
         }
         stage('custom hello world'){
             steps{
-                echo 'Hello world from github baby!'
+                echo 'Hello world from github baby inside of folder!'
             }
         }
     }
