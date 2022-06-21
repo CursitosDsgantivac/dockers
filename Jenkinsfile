@@ -3,13 +3,19 @@ pipeline{
 
     stages{
         stage('Hello'){
-            echo 'Hello world!'
+            steps{
+                echo 'Hello world!'
+            }
         }
         stage('show Dockers'){
-            sh "docker ps"
+            steps{
+                sh "docker ps"
+            }
         }
         stage('show docker images'){
-            sh "docker images"
+            steps{
+                sh "docker images"
+            }
         }
     }
 }
