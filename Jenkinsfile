@@ -17,5 +17,10 @@ pipeline{
                 sh "docker images"
             }
         }
+        stage('custom hello world'){
+            steps{
+                echo 'Hello world from github baby!'
+            }
+        }
     }
 }
